@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ornel Mero</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h2 class="text-secondary p-4 text-uppercase font-weight-light">Ornel Mero</h2>
+        <hr class="px-2">
+    </header>
+
+    <!-- Main Section -->
+    <section class="container p-4">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h1>Software Developer</h1>
+                <h5>Loves watching ONE championship and UFC👊!</h5>
+                <h5>Loves learning new things (only if interesting)📁</h5>
+                <h5>Ethical Hacker wannabe!💻</h5>
+            </div>
+            <div class="col-md-6 col-12 text-center">
+                <img src="https://images.theconversation.com/files/38926/original/5cwx89t4-1389586191.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=926&fit=clip" alt="Developer Image" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>    
+
+    <!-- Buttons Section -->
+    <section class="px-4 text-center">
+        <a class="btn btn-primary btn-lg" style="color: white;" href="https://t.me/higher_being_from_above" target="_blank">Business</a>
+        <a class="btn btn-light btn-lg" href="../static/folder/Mero CV.pdf" download="Daddies CV">Learn about Mero</a>
+    </section>
+
+    <hr>
+
+    <!-- Superpowers and Form Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h2>Superpowers</h2>
+                <ul>
+                    <li>JavaScript frameworks (React JS, Express JS)</li>
+                    <li>Python frameworks (Flask)</li>
+                    <li>Web Scraping and automation (Selenium, OpenBullet)</li>
+                    <li>Databases (MySQL, MongoDB)</li>
+                    <li>Data analysis (Panda)</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-12">
+                <h2>Let's chat</h2>
+                <form name="sentMessage" class="contact-form" action="{{url_for('home')}}" method="post">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email" required>
+                    <input type="text" class="form-control mt-3" id="message" name="message" placeholder="Your much beloved message..." required></input>
+                    <input type="submit" class="btn btn-primary my-3" style="width: 100%;" value="Send">
+                </form>
+                <div class="row" style="display: flex; justify-content: center; align-items: center;">
+                    <button onclick="copy_to_clipboard()" class="btn btn-light">Buy me a ☕</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer class="text-center p-4">
+        <p>Ornel Mero &copy; {{year}}</p>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="../static/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
